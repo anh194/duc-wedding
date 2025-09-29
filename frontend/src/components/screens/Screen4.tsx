@@ -4,6 +4,7 @@ type ScreenProps = {
 }
 
 export default function Screen4({ onNext, onBack }: ScreenProps) {
+  void onNext
   return (
     <div style={styles.page}>
       <div style={styles.background} />
