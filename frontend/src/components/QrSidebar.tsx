@@ -18,7 +18,7 @@ export default function QrSidebar() {
   const src = open ? '/QR_code.png' : '/QR_button.png'
 
   return (
-    <div ref={containerRef} style={styles.container}>
+    <div ref={containerRef} style={styles.container} className="qr-sidebar">
       <img
         src={src}
         alt={open ? 'QR code' : 'Open QR'}

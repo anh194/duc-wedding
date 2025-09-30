@@ -7,13 +7,13 @@ export default function Screen2({ onNext, onBack }: ScreenProps) {
   return (
     <div style={styles.page}>
       <div style={styles.background} />
-      <button onClick={onBack} style={styles.back} aria-label="Back">⟵</button>
+      <button onClick={onBack} style={styles.back} aria-label="Back" className="screen-back">⟵</button>
       <img
         onClick={onNext}
         src="/white_button.png"
         alt="Next"
         style={styles.next}
-        className="next-button-image"
+        className="next-button-image screen-next"
       />
     </div>
   )

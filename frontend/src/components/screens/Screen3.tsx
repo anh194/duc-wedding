@@ -13,8 +13,8 @@ export default function Screen3({ onNext, onBack }: ScreenProps) {
   return (
     <div style={styles.page}>
       <div style={styles.background} />
-      <button onClick={onBack} style={styles.back} aria-label="Back">⟵</button>
-      <div style={styles.nameRow}>
+      <button onClick={onBack} style={styles.back} aria-label="Back" className="screen-back">⟵</button>
+      <div style={styles.nameRow} className="screen3-nameRow">
         <span style={styles.nameLabelText}>Enter Name:</span>
         <input
           type="text"
@@ -24,7 +24,7 @@ export default function Screen3({ onNext, onBack }: ScreenProps) {
           aria-label="Guest name"
         />
       </div>
-      <div style={styles.rowOne}>
+      <div style={styles.rowOne} className="screen3-rowOne">
         <button
           onClick={() => setSelection('single')}
           style={{
@@ -49,7 +49,7 @@ export default function Screen3({ onNext, onBack }: ScreenProps) {
           <img src="/couple.png" alt="Couple" style={styles.choiceImage} />
         </button>
       </div>
-      <div style={styles.rowTwo}>
+      <div style={styles.rowTwo} className="screen3-rowTwo">
         <button
           onClick={() => setAfterParty('after_party')}
           style={{
@@ -88,7 +88,7 @@ export default function Screen3({ onNext, onBack }: ScreenProps) {
         src="/white_button.png"
         alt="Next"
         style={styles.next}
-        className="next-button-image"
+        className="next-button-image screen-next"
       />
     </div>
   )

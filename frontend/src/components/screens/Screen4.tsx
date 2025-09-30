@@ -8,7 +8,7 @@ export default function Screen4({ onNext, onBack }: ScreenProps) {
   return (
     <div style={styles.page}>
       <div style={styles.background} />
-      <button onClick={onBack} style={styles.back} aria-label="Back">⟵</button>
+      <button onClick={onBack} style={styles.back} aria-label="Back" className="screen-back">⟵</button>
     </div>
   )
 }

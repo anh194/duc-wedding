@@ -12,13 +12,14 @@ export default function Screen1({ onNext, onBack }: ScreenProps) {
         src="/address.png"
         alt="Address"
         style={styles.address}
+        className="screen1-address"
       />
       <img
         onClick={onNext}
         src="/white_button.png"
         alt="Next"
         style={styles.next}
-        className="next-button-image"
+        className="next-button-image screen-next"
       />
     </div>
   )

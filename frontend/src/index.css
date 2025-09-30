@@ -52,6 +52,34 @@ body {
   transform: scale(1.06);
 }
 
+/* Responsive overrides for screen elements */
+@media (max-width: 768px) {
+  /* Example selectors to be applied via className on elements */
+  .screen1-address { bottom: 20vh !important; width: 70vw !important; }
+  .screen-next { right: 6vw !important; bottom: 6vh !important; width: 22vw !important; }
+  .screen-back { right: 6vw !important; top: 5vh !important; width: 14vw !important; }
+
+  .screen3-nameRow { bottom: 70vh !important; width: 80vw !important; }
+  .screen3-rowOne { bottom: 46vh !important; gap: 4vw !important; }
+  .screen3-rowTwo { bottom: 22vh !important; gap: 4vw !important; }
+  /* QR sidebar position/size */
+  .qr-sidebar { right: 0.5rem !important; }
+  .qr-sidebar-image { width: 20vw !important; }
+}
+
+@media (max-width: 480px) {
+  .screen1-address { bottom: 36vh !important; width: 80vw !important; left: 32% !important; }
+  .screen-next { right: 6vw !important; bottom: 6vh !important; width: 26vw !important; }
+  .screen-back { right: 6vw !important; top: 5vh !important; width: 16vw !important; }
+
+  .screen3-nameRow { bottom: 64vh !important; width: 86vw !important; }
+  .screen3-rowOne { bottom: 48vh !important; gap: 3vw !important; }
+  .screen3-rowTwo { bottom: 30vh !important; gap: 3vw !important; }
+  /* QR sidebar position/size */
+  .qr-sidebar { right: 0.25rem !important; top: 70% !important; }
+  .qr-sidebar-image { width: 20vw !important;}
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
