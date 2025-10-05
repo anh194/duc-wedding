@@ -83,13 +83,14 @@ export default function Screen3({ onNext, onBack }: ScreenProps) {
           <img src="/both.png" alt="Both" style={styles.choiceImage} />
         </button>
       </div>
-      <img
+      <button
         onClick={onNext}
-        src="/white_button.png"
-        alt="Next"
         style={styles.next}
         className="next-button-image screen-next"
-      />
+        aria-label="Next"
+      >
+        →
+      </button>
     </div>
   )
 }
@@ -223,8 +224,17 @@ const styles: { [key: string]: React.CSSProperties } = {
     maxWidth: 120,
     minWidth: 64,
     aspectRatio: '1 / 1',
-    objectFit: 'contain',
     cursor: 'pointer',
+    borderRadius: '50%',
+    border: 'none',
+    background: '#FFD700',
+    color: '#000',
+    fontSize: 'clamp(16px, 4vw, 24px)',
+    fontWeight: 'bold',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
   },
   back: {
     position: 'fixed',

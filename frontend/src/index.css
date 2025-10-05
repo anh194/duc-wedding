@@ -40,6 +40,7 @@ body {
 /* Hover scale for Next button image */
 .next-button-image:hover {
   transform: scale(1.06);
+  background: #FFC107 !important; /* Slightly brighter yellow on hover */
 }
 
 /* Hover scale for Back button */
